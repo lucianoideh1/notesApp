@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+}
+button,
+input,
+textarea{
+    font-family: inherit;
+    font-size: inherit;
+}
+body{
+    background-color: rgb(118, 106, 90);
+}
+.container{
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    width: fit-content;
+    border-radius: 1em;
+}
+.container *{
+margin: .8em ;
+}
+input{
+    padding: .8em;
+    border: none;
+    background-color: aliceblue;
+    border-radius: .8em;
+}
+input:active{
+    border: red;
+    outline: red;
+}
+input:focus{
+    border: red;
+    outline: red;
+}
+button{
+    background-color: rgb(206, 220, 97);
+    padding: .8em;
+    border:none;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(220, 235, 109);
+}
+ul li{
+    list-style: none;
+}
