@@ -23,7 +23,7 @@ body{
     border-radius: 1em;
 }
 .container *{
-margin: .8em ;
+margin: .5em ;
 }
 input{
     padding: .8em;
@@ -50,11 +50,15 @@ button:hover{
     background-color: rgb(220, 235, 109);
     cursor: pointer;
 }
-
+.tasks-container{
+margin-left: 0;
+margin-right: 0;
+}
 article p{
     padding: 5px;
     border-radius: 5px;
     background-color: #dcefff;
+    margin-left: 0;
 }
 .top-part{
     display: flex;
