@@ -28,8 +28,9 @@ margin: .8em ;
 input{
     padding: .8em;
     border: none;
-    background-color: aliceblue;
+    background-color: #dcefff;
     border-radius: .8em;
+    width: 100%;
 }
 input:active{
     border: red;
@@ -41,13 +42,23 @@ input:focus{
 }
 button{
     background-color: rgb(206, 220, 97);
-    padding: .8em;
+    padding: .8em 1.2em;
     border:none;
     font-weight: bold;
 }
 button:hover{
     background-color: rgb(220, 235, 109);
+    cursor: pointer;
 }
-ul li{
-    list-style: none;
+
+article p{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #dcefff;
+}
+.top-part{
+    display: flex;
+}
+.top-part *{
+    margin: 2px;
 }
