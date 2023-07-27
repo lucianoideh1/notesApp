@@ -13,7 +13,6 @@ tasksContainer.append(tasksEl)
 addBtn.addEventListener("click",function(){
     tasks.push(inputField.value)
     localStorage.setItem("tasks",JSON.stringify(tasks))
-    tasksContainer.innerHTML += `<p>${inputField.value}</p>`
+    tasksEl.innerHTML += `<p>${inputField.value}</p>`
     inputField.value = ""
 })
-
