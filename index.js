@@ -1,18 +1,23 @@
 const inputField = document.getElementById('input-field')
 const addBtn = document.getElementById('add-btn')
 const tasksContainer = document.getElementById('tasks-container')
+const tasksFromLs = JSON.parse(localStorage.getItem("tasks"))
 
-let tasks = ["Go out","Buy groceries","Workout","Create an app"]
-let tasksEl = document.createElement('article')
+let tasksArr = []
 
-for(let i = 0 ;i < tasks.length;i++){
-tasksEl.innerHTML += `<p>${tasks[i]}</p>`
-}
-tasksContainer.append(tasksEl)
- 
 addBtn.addEventListener("click",function(){
-    tasks.push(inputField.value)
-    localStorage.setItem("tasks",JSON.stringify(tasks))
-    tasksEl.innerHTML += `<p>${inputField.value}</p>`
+    let inputFieldValue = inputField.value
+    tasksArr.push(inputFieldValue)
+    localStorage.setItem("tasks",JSON.stringify(tasksArr))
+
+    console.log(tasksArr)
+
+    tasksContainer.innerHTML = ""
+    for(let i=0; i < tasksArr.length; i++){
+        let currentTask = tasksArr[i]
+        tasksContainer.innerHTML += `<li>${currentTask}</li>`
+    }
+
     inputField.value = ""
 })
+

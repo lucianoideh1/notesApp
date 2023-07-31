@@ -53,6 +53,14 @@ button:hover{
 .tasks-container{
 margin-left: 0;
 margin-right: 0;
+
+}
+li{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #dcefff;
+    margin-left: 0;
+    list-style: none;
 }
 article p{
     padding: 5px;
