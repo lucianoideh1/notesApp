@@ -16,7 +16,7 @@ body{
     background-color: rgb(118, 106, 90);
 }
 .container{
-    margin: 1em;
+    margin: 1em auto;
     padding: 1em;
     background-color: white;
     width: fit-content;
@@ -49,6 +49,15 @@ button{
 button:hover{
     background-color: rgb(220, 235, 109);
     cursor: pointer;
+}
+.clear-btn{
+    margin-top: 2em;
+    background-color: black;
+    color: rgb(206, 220, 97);
+    width: 90%;
+}
+.clear-btn:hover{
+color: black;
 }
 .tasks-container{
 margin-left: 0;
